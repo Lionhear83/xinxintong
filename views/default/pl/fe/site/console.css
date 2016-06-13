@@ -1,0 +1,16 @@
+html,body{height:100%;width:100%}
+body{background:#f8f8f8;position:relative;overflow:hidden;display:flex;flex-direction:column;}
+.site.navbar-nav{position:absolute;left:50%;margin-left:-208px;float:none;}
+.site.navbar-nav .active:after{content:' ';position:absolute;left:0;right:0;bottom:-1px;height:3px;background:red;}
+.container{flex:1.0;overflow:hidden;position:relative;display:flex;padding:0;}
+#viewRecent,#viewUsers{flex:1.0;display:flex;flex-direction:column;border:1px solid #ddd;border-radius:4px;background:#fff;}
+#viewRecent{margin-right:8px;}
+#viewUsers{margin-left:8px;}
+
+/*recent*/
+#viewRecent .matters{flex:1.0;overflow-y:auto;overflow-x:hidden;}
+#viewRecent .navbar{margin-bottom:0;}
+#viewRecent .thumbnail{position:relative;height:145px;cursor:pointer;display:flex;flex-direction:column;padding:8px;}
+#viewRecent .thumbnail .summary{flex:1;overflow:hidden;}
+#viewRecent .thumbnail .attr{display:flex;}
+#viewRecent .thumbnail .operator_name{flex:1;}
